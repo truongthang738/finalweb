@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<meta charset="utf-8">
+
+   <head>
+<meta charset="utf-8" />
+<title>SERVICE DEPARTMENT</title>
+<meta name="description" content="fun of web design" />
+<meta name="author" content="ThangTruong" />
+<meta name="keyword" content="learn css,css layout" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<link type="text/css" rel="stylesheet" href="normalize.css" />
+</head>
+<style>
+       table, tr, td {
+           border: 1px solid black;
+           border-collapse: collapse;
+       }
+       th, td {
+           padding: 15px;
+       }
+
+
+     </style>
+
+
+
+<div id="menu">
+            <ul>
+              <li><a href="final_about.html">Home</a></li>
+              <li><a href="final_service.html">Service</a></li>
+              <li><a href="final_contact.html">Contact</a></li>
+              <li><a href="final_news.html">News</a></li>
+              <li><a href="final_maps.html">Artshow</a></li>
+              <li><a href="final_joinour.html">Example</a></li>
+            </ul>
+</div><!--END #menu-->
+
+<div class="call-to-action">
+
+ <h2 ><span style="color:red">Welcome to services Department</span></h2>
+
+ <font color="blue"><marquee behavior="alternate" width="10%"> ►►</marquee><b><a href= "mailto:truongthang738@gmail.com">Email: truongthang738@gmail.com</a></b><marquee behavior="alternate" width="10%">◄◄</marquee></font>
+
+ <p>I took Fun of Web Design class for 8 weeks during my 3rd term. I had learned about HTML and CSS.
+I can say that CSS is cool, it helps your website look more interesting.
+Therefore, I would like to share knowledge to you!</p>
+<p><em>In this page I will give you some helpful website to learn HTML and CSS.<em></p>
+<p><em>Click onto the words in this table to go to the website that you want. Some websites may ask for an account!</em></p>
+   <table align="center">
+     <tr>
+       <td><a href="https://www.codecademy.com/courses/learn-html-elements/lessons/intro-to-html/exercises/intro?course_redirect=learn-html" target="_blank" title="">Codecademy </a></td>
+       <td><a href="https://dash.generalassemb.ly/">Ca Dash</a></td>
+       <td><a href="https://www.edx.org">Edx</a></td>
+       <td><a href="https://www.udemy.com/">Udemy</a></td>
+     </tr>
+     <tr>
+       <td><a href="https://www.lynda.com/in/general2?cid=l0:en:af:le:prosb:s0:0:ind:cj:8186514&utm_medium=affiliate&utm_source=CJ&utm_content=11926&utm_campaign=CD17318&bid=11926&AID=CD17318&AIDCJ=12308797&PIDCJ=8186514&SIDCJ=68756X1554901X321c54014efca3f152b9bcaf1d2bf07c&subid1=8186514">Lynda</a></td>
+       <td><a href="https://www.w3schools.com/">W3schools</a></td>
+       <td><a href="https://www.codeavengers.com/">Code Avengers</a></td>
+       <td><a href="https://www.freecodecamp.org/">Free code camp</a></td>
+     </tr>
+   </table>
+<br><br><br><br>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  <pre><em><b>Thang Truong • Share my knowledge about • HTML & CSS </b></em></pre>
+</div><!--#footer-->
+
+<style type="text/css">
+/*==Style for website==*/
+* {
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+}
+body {
+ font-family: Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ line-height: 1.254em;
+ margin: 0;
+ padding: 0;
+}
+a {
+ text-decoration: none;
+ color: #3B8BBA;
+}
+a:hover,
+a:visited {
+ color: #265778;
+}
+
+/*==boder for website==*/
+#container {
+ padding-left: 150px;
+ position: relative;
+ left: 0;
+ width: 100%;
+}
+#menu {
+ position: fixed;
+ height: 100%;
+ background-color: #191818;
+ width: 150px;
+ left: 0;
+}
+
+/*==Trang trí menu==*/
+#menu ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+
+#menu ul li {
+ line-height: 2.9em;
+ height: 2.9em;
+}
+
+#menu li a {
+ display: block;
+ color: #fff;
+ padding: 0 1em;
+ border-bottom: 1px solid #333;
+}
+#menu li:hover {
+ background-color: #454545;
+}
+/*==style for boder content==*/
+#content {
+ padding: 1em 8em;
+}
+#header,
+.call-to-action {
+ text-align: center;
+}
+/*==Trang trí header của content==*/
+#header{}
+#slogan {
+ color: #8997A0;
+ font-size: 0.8em;
+}
+/*==Call to Action==*/
+.call-to-action {
+ padding: 1.5em 20%;
+ background: #EFEFEF;
+ border: 1px solid#E8E8E8;
+}
+/*==Chia cột phần content==*/
+.row {
+ overflow: auto;
+ margin: 1.5em auto;
+}
+/*==Chia cột phần content==*/
+.row {
+ overflow: auto;
+ margin: 1.5em auto;
+}
+.row .col {
+ float: left;
+ width: 31.3333%;
+ margin-right: 2.99%;
+}
+.row .col:last-child {
+ float: right;
+ margin-right: 0;
+}
+/* Style for photoes */
+.row .col img {
+ float: left;
+ margin-right: 1em;
+}
+</style>
+
+<script>
+if  ((document.getElementById) &&
+window.addEventListener || window.attachEvent){
+
+(function(){
+
+//Configure here.
+
+var colours = new Array("#ff0000","#00ff00"); //Add as many colours as you like!
+var numberOfDots = 14;
+var setTimeOutSpeed = 10;   //Timeout speed!
+var followMouseSpeed = 0.03; //Must be less than 1 & greater than 0!
+var twistAndSpinSpeed = 0.04;
+var colourChangeSpeed = 2;
+
+//End config.
+var idx = document.getElementsByTagName('div').length;
+for (i = 0; i < numberOfDots; i++){
+document.write('<div id="dvs'+(idx+i)+'" style="position:absolute;top:0px;left:0px;'
++'width:1px;height:1px;background-color:'+colours[0]+';font-size:1px"><\/div>');
+}
+var h,y,ref;
+var d = document;
+var domWw = (typeof window.innerWidth == "number");
+var domSy = (typeof window.pageYOffset == "number");
+var pi = 3.1415/180;
+var buff = 74;
+var the_dots = [12];
+var ev = 360/numberOfDots;
+var step2 = 2;
+var pix = "20px";
+var y = 2;
+var x = 20;
+var ry = 0;
+var rx = 0;
+var dy = 0;
+var dx = 0;
+var sy = 0;
+var sx = 0;
+var scy = 0;
+var scx = 0;
+var counter1 = idx;
+var counter2 = 0;
+var counter3 = 0;
+var step1 = 0;
+
+if (followMouseSpeed <= 0 || followMouseSpeed >= 1){
+ followMouseSpeed = 0.8;
+}
+
+if (domWw) ref = window;
+else{
+ if (d.documentElement &&
+  typeof d.documentElement.clientWidth == "20" &&
+  d.documentElement.clientWidth != 0)
+  ref = d.documentElement;
+ else{
+  if (d.body &&
+  typeof d.body.clientWidth == "20")
+  ref = d.body;
+ }
+}
+
+function winSize(){
+var mozBar = ((domWw) && ref.innerWidth != d.documentElement.offsetWidth)?20:0;
+h = (domWw)?ref.innerHeight:ref.clientHeight;
+w = (domWw)?ref.innerWidth - mozBar:ref.clientWidth;
+}
+
+function scrolled(){
+if (domWw){
+ scy = ref.pageYOffset;
+ scx = ref.pageXOffset;
+ }
+else{
+ scy = ref.scrollTop;
+ scx = ref.scrollLeft;
+ }
+}
+
+function mouse(e){
+var msy = (domSy)?window.pageYOffset:0;
+if (!e) e = window.event;
+ if (typeof e.pageY == "number"){
+  y = e.pageY - msy;
+  x = e.pageX;
+ }
+ else{
+  y = e.clientY - msy;
+  x = e.clientX;
+ }
+}
+
+function colourStep(){
+counter1 += step2;
+if (counter1 >= numberOfDots+idx){
+ counter1 = idx;
+ counter2 += step2;
+}
+if (counter2 == colours.length){
+ counter2 = 0;
+}
+scrolled();
+document.getElementById("dvs"+counter1).style.backgroundColor = colours[counter2];
+}
+
+function DoItAll(){
+counter3++;
+step1 -= twistAndSpinSpeed;
+
+dy = ry+=(y-ry)*followMouseSpeed;
+dx = rx+=(x-rx)*followMouseSpeed;
+if (ry >= h-buff){
+ ry = h-buff;
+}
+if (ry <= buff){
+ ry = buff;
+}
+if (rx >= w-buff){
+ rx = w-buff;
+}
+if (rx <= buff){
+ rx = buff;
+}
+if (counter3 > colourChangeSpeed){
+ colourStep();
+ counter3 = 0;
+}
+
+for (i = 0; i < numberOfDots; i++){
+ the_dots[i].top = ry + 70 * Math.cos(step1 + i * ev * pi) * Math.sin(step1/2) + scy + pix;
+ the_dots[i].left = rx + 70 * Math.sin(step1 + i * ev * pi) * Math.cos(1+step1/2) + scx + pix;
+}
+
+setTimeout(DoItAll,setTimeOutSpeed);
+}
+
+function init(){
+for (i = 0; i < numberOfDots; i++){
+ the_dots[i] = document.getElementById("dvs"+(idx+i)).style;
+}
+winSize();
+DoItAll();
+}
+
+if (window.addEventListener){
+ window.addEventListener("resize",winSize,false);
+ window.addEventListener("load",init,false);
+ document.addEventListener("mousemove",mouse,false);
+}
+else if (window.attachEvent){
+ window.attachEvent("onresize",winSize);
+ window.attachEvent("onload",init);
+ document.attachEvent("onmousemove",mouse);
+}
+
+})();
+}//End.
+</script>
+
+
+
+ </body>
+</html>
